@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mahg.jf.jfes.dao.DevInfoMapper">
+	<!-- 获取基本信息 -->
+	<select id="getBaseInfo" parameterType="long" resultType="hashmap">
+		select
+		p.jfid,p.real_name,p.sex,p.resume,p.mobile
+		contact,p.location,p.dict_code,p.worktime,p.contact_flag,p.photo_url,p.birthday,p.telephone,u.mobile,u.nickname
+		from jf_p_profile p,jf_u_users u where p.jfid = u.jfid and
+		p.jfid=#{jfid} LIMIT 1
+	</select>
+	
+
+</mapper>
+
