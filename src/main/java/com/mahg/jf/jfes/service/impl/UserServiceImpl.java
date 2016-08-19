@@ -9,7 +9,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import com.mahg.jf.jfes.dao.DevInfoMapper;
-import com.mahg.jf.jfes.dao.DynamicDataSourceRegister;
 import com.mahg.jf.jfes.service.UserService;
 
 
